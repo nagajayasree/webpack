@@ -16,4 +16,17 @@ module.exports = {
       path: path.resolve(__dirname, "bundle"),
     filename: "js/[name].[contenthash].js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
+  },
 };
