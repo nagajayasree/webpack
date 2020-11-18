@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlPlugin = require("html-webpack-plugin");
-const WebDevServer = require("webpack-dev-server");
 
 module.exports = {
   entry: {
