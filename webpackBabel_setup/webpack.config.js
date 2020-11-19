@@ -41,7 +41,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    histroyApiFallback: true,
-    port: 5000,
+    contentBase: path.join(__dirname, "dist"),
+    host: "127.5.0.1",
+    historyApiFallback: true,
+    compress: true,
+    port: 2000,
   },
 };
